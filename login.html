@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Log In | Business Copilot</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- AUTH NAVIGATION -->
+
+    <header class="navbar auth-navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Business<span>Copilot</span>
+            </a>
+
+            <a href="index.html" class="auth-back-link">
+                ← Back to website
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="auth-main">
+
+        <div class="auth-container">
+
+  
+        <!-- LOGIN HEADER -->
+
+            <div class="auth-header">
+
+                <div class="auth-logo-mark">
+                    BC
+                </div>
+
+                <span class="section-label">
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Log in to your account
+                </h1>
+
+                <p>
+                    Pick up where you left off and keep your business in focus.
+                </p>
+
+            </div>
+
+
+           
+                 <!-- LOGIN CARD -->
+        
+            <div class="auth-card">
+
+                <form id="loginForm" class="auth-form">
+
+                    <div class="form-group">
+
+                        <label for="loginEmail">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+              </div>
+
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Error / success message -->
+                    <div
+                        id="loginMessage"
+                        class="auth-message"
+                        role="alert"
+                    ></div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Log in
+                    </button>
+
+                </form>
+
+
+            
+                     <!-- SIGNUP LINK -->
+           
+                <div class="auth-switch">
+
+                    <p>
+                        Don't have an account?
+                        <a href="signup.html">
+                            Create one
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            
+                 <!-- DEMO NOTE -->
+           
+        </div>
+
+    </main>
+
+
+    
+         <!-- FOOTER -->
+  
+    <footer class="auth-footer">
+
+        <p>
+            © 2026 Business Copilot. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
