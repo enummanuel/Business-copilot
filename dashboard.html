@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dashboard | Business Copilot</title>
 
-    <meta
-        name="description"
-        content="Business Copilot dashboard — understand your business numbers and make better decisions."
-    >
+    <meta name="description"
+        content="Business Copilot dashboard — understand your business numbers and make better decisions.">
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -42,42 +41,26 @@
                 <span class="dashboard-nav-label">
                     WORKSPACE
                 </span>
-                <a
-                    href="#overview"
-                    class="dashboard-nav-link active"
-                    data-section="overview"
-                >
+                <a href="#overview" class="dashboard-nav-link active" data-section="overview">
                     <span class="dashboard-nav-icon">◉</span>
                     <span>Overview</span>
                 </a>
 
-                <a
-                    href="#transactions"
-                    class="dashboard-nav-link"
-                    data-section="transactions"
-                >
+                <a href="#transactions" class="dashboard-nav-link" data-section="transactions">
                     <span class="dashboard-nav-icon">↕</span>
                     <span>Transactions</span>
                 </a>
 
                 <a href="#inventory" class="dashboard-nav-link" data-section="inventory">
-                <span class="dashboard-nav-icon">▦</span>
-                <span>Inventory</span>
+                    <span class="dashboard-nav-icon">▦</span>
+                    <span>Inventory</span>
                 </a>
 
-                <a
-                    href="#goals"
-                    class="dashboard-nav-link"
-                    data-section="goals"
-                >
+                <a href="#goals" class="dashboard-nav-link" data-section="goals">
                     <span class="dashboard-nav-icon">◎</span>
                     <span>Goals</span>
                 </a>
-                <a
-                    href="#insights"
-                    class="dashboard-nav-link"
-                    data-section="insights"
-                >
+                <a href="#insights" class="dashboard-nav-link" data-section="insights">
                     <span class="dashboard-nav-icon">✦</span>
                     <span>Insights</span>
                 </a>
@@ -87,11 +70,7 @@
                     ACCOUNT
                 </span>
 
-                <a
-                    href="#settings"
-                    class="dashboard-nav-link"
-                    data-section="settings"
-                >
+                <a href="#settings" class="dashboard-nav-link" data-section="settings">
                     <span class="dashboard-nav-icon">⚙</span>
                     <span>Settings</span>
                 </a>
@@ -105,19 +84,13 @@
                 <!-- User -->
                 <div class="dashboard-user">
 
-                    <div
-                        class="dashboard-user-avatar"
-                        id="dashboardUserAvatar"
-                    >
+                    <div class="dashboard-user-avatar" id="dashboardUserAvatar">
                         U
                     </div>
 
                     <div class="dashboard-user-info">
 
-                        <div
-                            class="dashboard-user-name"
-                            id="dashboardUserName"
-                        >
+                        <div class="dashboard-user-name" id="dashboardUserName">
                             User
                         </div>
 
@@ -131,11 +104,7 @@
 
 
                 <!-- Logout -->
-                <button
-                    type="button"
-                    class="dashboard-logout"
-                    id="logoutButton"
-                >
+                <button type="button" class="dashboard-logout" id="logoutButton">
                     ← Log out
                 </button>
 
@@ -158,12 +127,8 @@
 
             <header class="dashboard-topbar">
 
-                <button
-                    type="button"
-                    class="dashboard-menu-button"
-                    id="dashboardMenuButton"
-                    aria-label="Open dashboard menu"
-                >
+                <button type="button" class="dashboard-menu-button" id="dashboardMenuButton"
+                    aria-label="Open dashboard menu">
                     ☰
                 </button>
 
@@ -173,85 +138,66 @@
                 </div>
 
 
-<div class="dashboard-topbar-actions">
+                <div class="dashboard-topbar-actions">
 
-    <!-- Notifications -->
-    <div class="dashboard-notification-wrapper">
+                    <!-- Notifications -->
+                    <div class="dashboard-notification-wrapper">
 
-        <button
-            type="button"
-            class="dashboard-notification-button"
-            id="notificationButton"
-            aria-label="Open notifications"
-            aria-expanded="false"
-        >
-            <span class="dashboard-notification-icon">
-                ♢
-            </span>
+                        <button type="button" class="dashboard-notification-button" id="notificationButton"
+                            aria-label="Open notifications" aria-expanded="false">
+                            <span class="dashboard-notification-icon">
+                                ♢
+                            </span>
 
-            <span
-                class="dashboard-notification-badge"
-                id="notificationBadge"
-                hidden
-            >
-                0
-            </span>
-        </button>
+                            <span class="dashboard-notification-badge" id="notificationBadge" hidden>
+                                0
+                            </span>
+                        </button>
 
 
-        <!-- Notification Panel -->
-        <div
-            class="dashboard-notification-panel"
-            id="notificationPanel"
-            hidden
-        >
+                        <!-- Notification Panel -->
+                        <div class="dashboard-notification-panel" id="notificationPanel" hidden>
 
-            <div class="dashboard-notification-header">
+                            <div class="dashboard-notification-header">
 
-                <div>
-                    <h3>
-                        Notifications
-                    </h3>
+                                <div>
+                                    <h3>
+                                        Notifications
+                                    </h3>
 
-                    <p>
-                        Important updates about your business.
-                    </p>
-                </div>
+                                    <p>
+                                        Important updates about your business.
+                                    </p>
+                                </div>
 
-            </div>
+                            </div>
 
 
-            <div
-                class="dashboard-notification-list"
-                id="notificationList"
-            >
+                            <div class="dashboard-notification-list" id="notificationList">
 
-                <div class="dashboard-notification-empty">
-                    <span>
-                        ✓
+                                <div class="dashboard-notification-empty">
+                                    <span>
+                                        ✓
+                                    </span>
+
+                                    <p>
+                                        You're all caught up.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Date -->
+                    <span class="dashboard-date" id="dashboardDate">
+                        Today
                     </span>
 
-                    <p>
-                        You're all caught up.
-                    </p>
                 </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- Date -->
-    <span
-        class="dashboard-date"
-        id="dashboardDate"
-    >
-        Today
-    </span>
-
-</div>
 
             </header>
 
@@ -263,931 +209,982 @@
 
             <div class="dashboard-content">
 
-            <section class="dashboard-overview" id="overview">
+                <section class="dashboard-overview" id="overview">
 
 
-                <!-- Welcome -->
-                <section class="dashboard-welcome">
+                    <!-- Welcome -->
+                    <section class="dashboard-welcome">
 
-                    <div class="dashboard-welcome-label">
-                        BUSINESS OVERVIEW
+                        <div class="dashboard-welcome-label">
+                            BUSINESS OVERVIEW
+                        </div>
+
+                        <h1 id="dashboardWelcome">
+                            Welcome back.
+                        </h1>
+
+                        <p>
+                            Here's a clear look at what's happening
+                            in your business.
+                        </p>
+
+                    </section>
+
+                    <!-- Overview Header -->
+
+                    <div class="dashboard-section-header">
+
+                        <div>
+                            <h2 class="dashboard-section-title">
+                                Overview
+                            </h2>
+
+                            <p class="dashboard-section-subtitle">
+                                Here's what's happening with your business.
+                            </p>
+                        </div>
+
+                        <div class="dashboard-period-filter">
+                            <label for="overviewPeriod" class="dashboard-period-label">
+                                Period
+                            </label>
+
+                            <select id="overviewPeriod" class="dashboard-period-select">
+                                <option value="today">
+                                    Today
+                                </option>
+
+                                <option value="week">
+                                    This Week
+                                </option>
+
+                                <option value="month" selected>
+                                    This Month
+                                </option>
+
+                                <option value="all">
+                                    All Time
+                                </option>
+                            </select>
+                        </div>
+
                     </div>
 
-                    <h1 id="dashboardWelcome">
-                        Welcome back.
-                    </h1>
 
-                    <p>
-                        Here's a clear look at what's happening
-                        in your business.
-                    </p>
-
-                </section>
-
-                <!-- Overview Header -->
-
-<div class="dashboard-section-header">
-
-    <div>
-        <h2 class="dashboard-section-title">
-            Overview
-        </h2>
-
-        <p class="dashboard-section-subtitle">
-            Here's what's happening with your business.
-        </p>
-    </div>
-
-<div class="dashboard-period-filter">
-    <label
-        for="overviewPeriod"
-        class="dashboard-period-label"
-    >
-        Period
-    </label>
-
-    <select
-        id="overviewPeriod"
-        class="dashboard-period-select"
-    >
-        <option value="today">
-            Today
-        </option>
-
-        <option value="week">
-            This Week
-        </option>
-
-        <option
-            value="month"
-            selected
-        >
-            This Month
-        </option>
-
-        <option value="all">
-            All Time
-        </option>
-    </select>
-</div>
-
-</div>
-
-
-                <!-- ========================================
+                    <!-- ========================================
                      STAT CARDS
                 ========================================= -->
 
-                <section class="dashboard-stats">
+                    <section class="dashboard-stats">
 
 
-                    <!-- Revenue -->
-                    <article class="dashboard-stat-card">
+                        <!-- Revenue -->
+                        <article class="dashboard-stat-card">
 
-                        <div class="dashboard-stat-top">
+                            <div class="dashboard-stat-top">
 
-                            <span class="dashboard-stat-label">
-                                Revenue
+                                <span class="dashboard-stat-label">
+                                    Revenue
+                                </span>
+
+                                <span class="dashboard-stat-icon">
+                                    ₦
+                                </span>
+
+                            </div>
+
+                            <div class="dashboard-stat-value" id="revenueValue">
+                                ₦0
+                            </div>
+
+                            <span class="dashboard-stat-change positive" id="revenueChange" hidden>
+                                No data yet
                             </span>
 
-                            <span class="dashboard-stat-icon">
-                                ₦
+                        </article>
+
+
+
+                        <!-- Expenses -->
+                        <article class="dashboard-stat-card">
+
+                            <div class="dashboard-stat-top">
+
+                                <span class="dashboard-stat-label">
+                                    Expenses
+                                </span>
+
+                                <span class="dashboard-stat-icon">
+                                    −
+                                </span>
+
+                            </div>
+
+                            <div class="dashboard-stat-value" id="expenseValue">
+                                ₦0
+                            </div>
+
+                            <span class="dashboard-stat-change neutral" id="expenseChange" hidden>
+                                No data yet
                             </span>
 
-                        </div>
-
-                        <div
-                            class="dashboard-stat-value"
-                            id="revenueValue"
-                        >
-                            ₦0
-                        </div>
-
-                      <span
-                        class="dashboard-stat-change positive"
-                        id="revenueChange"
-                        hidden
-                      >
-                        No data yet
-                      </span>
-
-                    </article>
+                        </article>
 
 
 
-                    <!-- Expenses -->
-                    <article class="dashboard-stat-card">
+                        <!-- Profit -->
+                        <article class="dashboard-stat-card">
 
-                        <div class="dashboard-stat-top">
+                            <div class="dashboard-stat-top">
 
-                            <span class="dashboard-stat-label">
-                                Expenses
+                                <span class="dashboard-stat-label">
+                                    Net Profit
+                                </span>
+
+                                <span class="dashboard-stat-icon">
+                                    ↗
+                                </span>
+
+                            </div>
+
+                            <div class="dashboard-stat-value" id="profitValue">
+                                ₦0
+                            </div>
+
+                            <span class="dashboard-stat-change positive" id="profitChange" hidden>
+                                No data yet
                             </span>
 
-                            <span class="dashboard-stat-icon">
-                                −
-                            </span>
+                        </article>
 
-                        </div>
+                    </section>
 
-                        <div
-                            class="dashboard-stat-value"
-                            id="expenseValue"
-                        >
-                            ₦0
-                        </div>
-
-                        <span
-                            class="dashboard-stat-change neutral"
-                            id="expenseChange" hidden
-                        >
-                            No data yet
-                        </span>
-
-                    </article>
-
-
-
-                    <!-- Profit -->
-                    <article class="dashboard-stat-card">
-
-                        <div class="dashboard-stat-top">
-
-                            <span class="dashboard-stat-label">
-                                Net Profit
-                            </span>
-
-                            <span class="dashboard-stat-icon">
-                                ↗
-                            </span>
-
-                        </div>
-
-                        <div
-                            class="dashboard-stat-value"
-                            id="profitValue"
-                        >
-                            ₦0
-                        </div>
-
-                        <span
-                            class="dashboard-stat-change positive"
-                            id="profitChange" hidden
-                        >
-                            No data yet
-                        </span>
-
-                    </article>
-
-                </section>
-
-                              <!-- ========================================
+                    <!-- ========================================
      FINANCIAL ACTIVITY
 ========================================= -->
 
-<div class="dashboard-activity-card">
+                    <div class="dashboard-activity-card">
 
-    <div class="dashboard-activity-header">
+                        <div class="dashboard-activity-header">
 
-        <div>
-            <h3>Financial Activity</h3>
-            <p>Track your revenue and expenses over time.</p>
-        </div>
+                            <div>
+                                <h3>Financial Activity</h3>
+                                <p>Track your revenue and expenses over time.</p>
+                            </div>
 
-    </div>
+                        </div>
 
-    <div class="dashboard-chart-wrapper">
+                        <div class="dashboard-chart-wrapper">
 
-        <canvas id="financialActivityChart"></canvas>
+                            <canvas id="financialActivityChart"></canvas>
 
-        <div
-            class="dashboard-chart-empty"
-            id="financialChartEmpty"
-            hidden
-        >
-            No financial data for this period.
-        </div>
+                            <div class="dashboard-chart-empty" id="financialChartEmpty" hidden>
+                                No financial data for this period.
+                            </div>
 
-    </div>
+                        </div>
 
-</div>
+                    </div>
 
 
-<!-- ========================================
+                    <!-- ========================================
      RECENT TRANSACTIONS
 ========================================= -->
 
-<div class="dashboard-recent-card">
+                    <div class="dashboard-recent-card">
 
-    <div class="dashboard-recent-header">
+                        <div class="dashboard-recent-header">
 
-        <div>
-            <h3>Recent Transactions</h3>
-            <p>Your latest business activity.</p>
-        </div>
+                            <div>
+                                <h3>Recent Transactions</h3>
+                                <p>Your latest business activity.</p>
+                            </div>
 
-        <button
-            type="button"
-            class="dashboard-secondary-button"
-            id="viewAllTransactionsButton"
-        >
-            View all
-        </button>
+                            <button type="button" class="dashboard-secondary-button" id="viewAllTransactionsButton">
+                                View all
+                            </button>
 
-    </div>
+                        </div>
 
 
-    <div
-        class="dashboard-recent-list"
-        id="recentTransactionsList"
-    ></div>
+                        <div class="dashboard-recent-list" id="recentTransactionsList"></div>
 
 
-    <div
-        class="dashboard-recent-empty"
-        id="recentTransactionsEmpty"
-        hidden
-    >
-        <p>No transactions yet.</p>
-        <span>Your recent transactions will appear here.</span>
-    </div>
+                        <div class="dashboard-recent-empty" id="recentTransactionsEmpty" hidden>
+                            <p>No transactions yet.</p>
+                            <span>Your recent transactions will appear here.</span>
+                        </div>
 
-</div>
+                    </div>
 
-              </section>
+                </section>
 
                 <!-- ========================================
                      MAIN DASHBOARD GRID
                 ========================================= -->
 
-     
 
-<!-- ========================================
+
+                <!-- ========================================
      TRANSACTIONS
 ========================================= -->
 
-<section class="dashboard-transactions" id="transactions">
+                <section class="dashboard-transactions" id="transactions">
 
-    <div class="dashboard-card">
+                    <div class="dashboard-card">
 
-        <!-- Header -->
-        <div class="dashboard-card-header">
+                        <!-- Header -->
+                        <div class="dashboard-card-header">
 
-            <div>
-                <h2 class="dashboard-card-title">
-                    Recent transactions
-                </h2>
+                            <div>
+                                <h2 class="dashboard-card-title">
+                                    Recent transactions
+                                </h2>
 
-                <p class="dashboard-card-subtitle">
-                    Keep track of money coming in and going out.
-                </p>
-            </div>
+                                <p class="dashboard-card-subtitle">
+                                    Keep track of money coming in and going out.
+                                </p>
+                            </div>
 
-            <button
-                type="button"
-                class="transaction-add-button"
-                id="openTransactionForm"
-            >
-                + Add transaction
-            </button>
+                            <button type="button" class="transaction-add-button" id="openTransactionForm">
+                                + Add transaction
+                            </button>
 
-        </div>
+                        </div>
 
 
-        <!-- Empty state -->
-        <div
-            class="transaction-empty"
-            id="transactionEmpty"
-        >
+                        <!-- Empty state -->
+                        <div class="transaction-empty" id="transactionEmpty">
 
-            <div class="dashboard-empty-icon">
-                ₦
-            </div>
+                            <div class="dashboard-empty-icon">
+                                ₦
+                            </div>
 
-            <h3>
-                No transactions yet.
-            </h3>
+                            <h3>
+                                No transactions yet.
+                            </h3>
 
-            <p>
-                Add your first transaction to start seeing
-                your business financial activity here.
-            </p>
+                            <p>
+                                Add your first transaction to start seeing
+                                your business financial activity here.
+                            </p>
 
-        </div>
+                        </div>
 
 
-        <!-- Transaction table -->
-        <div
-            class="transaction-table-wrapper"
-            id="transactionTableWrapper"
-        >
+                        <!-- Transaction table -->
+                        <div class="transaction-table-wrapper" id="transactionTableWrapper">
 
-            <table class="transaction-table">
+                            <table class="transaction-table">
 
-               <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Description</th>
-                        <th>Product</th>
-                        <th>Category</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Product</th>
+                                        <th>Category</th>
+                                        <th>Type</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
 
-                <tbody id="transactionList">
+                                <tbody id="transactionList">
 
-                    <!-- JavaScript will add transactions here -->
+                                    <!-- JavaScript will add transactions here -->
 
-                </tbody>
+                                </tbody>
 
-            </table>
+                            </table>
 
-        </div>
+                        </div>
 
 
-        <!-- Transaction form -->
-        <div
-            class="transaction-form-wrapper"
-            id="transactionFormWrapper"
-        >
+                        <!-- Transaction form -->
+                        <div class="transaction-form-wrapper" id="transactionFormWrapper">
 
-            <form
-                class="transaction-form"
-                id="transactionForm"
-            >
+                            <form class="transaction-form" id="transactionForm">
 
-                <div class="transaction-form-header">
+                                <div class="transaction-form-header">
 
-                    <div>
-                        <h3>
-                            Add transaction
-                        </h3>
+                                    <div>
+                                        <h3>
+                                            Add transaction
+                                        </h3>
 
-                        <p>
-                            Record an income or expense.
-                        </p>
-                    </div>
+                                        <p>
+                                            Record an income or expense.
+                                        </p>
+                                    </div>
 
-                    <button
-                        type="button"
-                        class="transaction-close-button"
-                        id="closeTransactionForm"
-                        aria-label="Close transaction form"
-                    >
-                        ×
-                    </button>
+                                    <button type="button" class="transaction-close-button" id="closeTransactionForm"
+                                        aria-label="Close transaction form">
+                                        ×
+                                    </button>
 
-                </div>
+                                </div>
 
 
-                <!-- Transaction type -->
-                <div class="transaction-type">
+                                <!-- Transaction type -->
+                                <div class="transaction-type">
 
-                    <label>
-                        Transaction type
-                    </label>
+                                    <label>
+                                        Transaction type
+                                    </label>
 
-                    <div class="transaction-type-options">
+                                    <div class="transaction-type-options">
 
-                        <label class="transaction-type-option">
+                                        <label class="transaction-type-option">
 
-                            <input
-                                type="radio"
-                                name="transactionType"
-                                value="income"
-                                checked
-                            >
+                                            <input type="radio" name="transactionType" value="income" checked>
 
-                            <span>
-                                Income
-                            </span>
+                                            <span>
+                                                Income
+                                            </span>
 
-                        </label>
+                                        </label>
 
 
-                        <label class="transaction-type-option">
+                                        <label class="transaction-type-option">
 
-                            <input
-                                type="radio"
-                                name="transactionType"
-                                value="expense"
-                            >
+                                            <input type="radio" name="transactionType" value="expense">
 
-                            <span>
-                                Expense
-                            </span>
+                                            <span>
+                                                Expense
+                                            </span>
 
-                        </label>
+                                        </label>
 
-                    </div>
+                                    </div>
 
-                </div>
+                                </div>
 
 
-                <!-- Form fields -->
-                <div class="transaction-form-grid">
+                                <!-- Form fields -->
+                                <div class="transaction-form-grid">
 
 
-                    <!-- Date -->
-                    <div class="transaction-field">
+                                    <!-- Date -->
+                                    <div class="transaction-field">
 
-                        <label for="transactionDate">
-                            Date
-                        </label>
+                                        <label for="transactionDate">
+                                            Date
+                                        </label>
 
-                        <input
-                            type="date"
-                            id="transactionDate"
-                            required
-                        >
+                                        <input type="date" id="transactionDate" required>
 
-                    </div>
+                                    </div>
 
 
-                    <!-- Description -->
-                    <div class="transaction-field">
+                                    <!-- Description -->
+                                    <div class="transaction-field">
 
-                        <label for="transactionDescription">
-                            Description
-                        </label>
+                                        <label for="transactionDescription">
+                                            Description
+                                        </label>
 
-                        <input
-                            type="text"
-                            id="transactionDescription"
-                            placeholder="e.g. Product A sale"
-                            required
-                        >
+                                        <input type="text" id="transactionDescription" placeholder="e.g. Product A sale"
+                                            required>
 
-                    </div>
+                                    </div>
 
 
-                    <!-- Category -->
-                    <div class="transaction-field">
+                                    <!-- Category -->
+                                    <div class="transaction-field">
 
-                        <label for="transactionCategory">
-                            Category
-                        </label>
+                                        <label for="transactionCategory">
+                                            Category
+                                        </label>
 
-                        <select
-                            id="transactionCategory"
-                            required
-                        >
+                                        <select id="transactionCategory" required>
 
-                            <option value="">
-                                Select category
-                            </option>
+                                            <option value="">
+                                                Select category
+                                            </option>
 
-                            <option value="Sales">
-                                Sales
-                            </option>
+                                            <option value="Sales">
+                                                Sales
+                                            </option>
 
-                            <option value="Inventory">
-                                Inventory
-                            </option>
+                                            <option value="Inventory">
+                                                Inventory
+                                            </option>
 
-                            <option value="Transport">
-                                Transport
-                            </option>
+                                            <option value="Transport">
+                                                Transport
+                                            </option>
 
-                            <option value="Rent">
-                                Rent
-                            </option>
+                                            <option value="Rent">
+                                                Rent
+                                            </option>
 
-                            <option value="Marketing">
-                                Marketing
-                            </option>
+                                            <option value="Marketing">
+                                                Marketing
+                                            </option>
 
-                            <option value="Utilities">
-                                Utilities
-                            </option>
+                                            <option value="Utilities">
+                                                Utilities
+                                            </option>
 
-                            <option value="Salaries">
-                                Salaries
-                            </option>
+                                            <option value="Salaries">
+                                                Salaries
+                                            </option>
 
-                            <option value="Other">
-                                Other
-                            </option>
+                                            <option value="Other">
+                                                Other
+                                            </option>
 
-                        </select>
+                                        </select>
 
-                    </div>
+                                    </div>
 
 
-                    <!-- Product -->
-                    <div
-                        class="transaction-field"
-                        id="transactionProductField"
-                    >
+                                    <!-- Product -->
+                                    <div class="transaction-field" id="transactionProductField">
 
-                        <label for="transactionProduct">
-                            Product
-                        </label>
+                                        <label for="transactionProduct">
+                                            Product
+                                        </label>
 
-                        <select id="transactionProduct">
+                                        <select id="transactionProduct">
 
-                            <option value="">
-                                Select product
-                            </option>
+                                            <option value="">
+                                                Select product
+                                            </option>
 
-                        </select>
+                                        </select>
 
-                    </div>
+                                    </div>
 
 
-                    <!-- Quantity -->
-                    <div
-                        class="transaction-field"
-                        id="transactionQuantityField"
-                    >
+                                    <!-- Quantity -->
+                                    <div class="transaction-field" id="transactionQuantityField">
 
-                        <label for="transactionQuantity">
-                            Quantity Sold
-                        </label>
+                                        <label for="transactionQuantity">
+                                            Quantity Sold
+                                        </label>
 
-                        <input
-                            type="number"
-                            id="transactionQuantity"
-                            placeholder="e.g. 2"
-                            min="1"
-                            step="1"
-                        >
+                                        <input type="number" id="transactionQuantity" placeholder="e.g. 2" min="1"
+                                            step="1">
+
+                                    </div>
+
+
+                                    <!-- Amount -->
+                                    <div class="transaction-field">
+
+                                        <label for="transactionAmount">
+                                            Amount (₦)
+                                        </label>
+
+                                        <input type="number" id="transactionAmount" placeholder="0.00" min="0"
+                                            step="0.01" required>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <!-- Form actions -->
+                                <div class="transaction-form-actions">
+
+                                    <button type="button" class="goal-delete-cancel" id="cancelTransaction">
+                                        Cancel
+                                    </button>
+
+                                    <button type="submit" class="transaction-save-button">
+                                        Save transaction
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
 
                     </div>
 
+                </section>
 
-                    <!-- Amount -->
-                    <div class="transaction-field">
-
-                        <label for="transactionAmount">
-                            Amount (₦)
-                        </label>
-
-                        <input
-                            type="number"
-                            id="transactionAmount"
-                            placeholder="0.00"
-                            min="0"
-                            step="0.01"
-                            required
-                        >
-
-                    </div>
-
-
-                </div>
-
-
-                <!-- Form actions -->
-                <div class="transaction-form-actions">
-
-                    <button
-                        type="button"
-                        class="goal-delete-cancel"
-                        id="cancelTransaction"
-                    >
-                        Cancel
-                    </button>
-
-                    <button
-                        type="submit"
-                        class="transaction-save-button"
-                    >
-                        Save transaction
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================
+                <!-- ========================================
      DELETE CONFIRMATION MODAL
 ========================================= -->
 
-<div
-    class="transaction-modal"
-    id="deleteTransactionModal"
-    aria-hidden="true"
->
+                <div class="transaction-modal" id="deleteTransactionModal" aria-hidden="true">
 
-    <div class="transaction-modal-overlay" id="deleteModalOverlay"></div>
+                    <div class="transaction-modal-overlay" id="deleteModalOverlay"></div>
 
-    <div
-        class="transaction-modal-content"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="deleteModalTitle"
-    >
+                    <div class="transaction-modal-content" role="dialog" aria-modal="true"
+                        aria-labelledby="deleteModalTitle">
 
-        <div class="transaction-modal-icon">
-            !
-        </div>
+                        <div class="transaction-modal-icon">
+                            !
+                        </div>
 
-        <h3 id="deleteModalTitle">
-            Delete transaction?
-        </h3>
+                        <h3 id="deleteModalTitle">
+                            Delete transaction?
+                        </h3>
 
-        <p>
-            This transaction will be permanently removed
-            from your business records.
-        </p>
+                        <p>
+                            This transaction will be permanently removed
+                            from your business records.
+                        </p>
 
-        <div class="transaction-modal-actions">
+                        <div class="transaction-modal-actions">
 
-            <button
-                type="button"
-                class="transaction-modal-cancel"
-                id="cancelDeleteTransaction"
-            >
-                Cancel
-            </button>
+                            <button type="button" class="transaction-modal-cancel" id="cancelDeleteTransaction">
+                                Cancel
+                            </button>
 
-            <button
-                type="button"
-                class="transaction-modal-delete"
-                id="confirmDeleteTransaction"
-            >
-                Delete transaction
-            </button>
+                            <button type="button" class="transaction-modal-delete" id="confirmDeleteTransaction">
+                                Delete transaction
+                            </button>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-</div>
-             
+                </div>
 
-                       <!-- ========================================
+
+                <!-- ========================================
                  INVENTORY SECTION
             ========================================= -->
 
-            <section class="dashboard-inventory" id="inventory">
+                <section class="dashboard-inventory" id="inventory">
 
-                <div class="dashboard-section-header">
+                    <div class="dashboard-section-header">
 
-                    <div>
-                        <h2>Inventory</h2>
+                        <div>
+                            <h2>Inventory</h2>
 
-                        <p>
-                            Manage your products, stock levels,
-                            and inventory status.
-                        </p>
-                    </div>
+                            <p>
+                                Manage your products, stock levels,
+                                and inventory status.
+                            </p>
+                        </div>
 
-                    <button
-                        type="button"
-                        class="dashboard-primary-button"
-                        id="openProductForm"
-                    >
-                        Add Product
-                    </button>
-
-                </div>
-
-
-                <!-- INVENTORY SUMMARY -->
-
-                <div class="inventory-summary">
-
-                    <div class="inventory-summary-card">
-
-                        <span class="inventory-summary-label">
-                            Total Products
-                        </span>
-
-                        <strong
-                            class="inventory-summary-value"
-                            id="totalProducts"
-                        >
-                            0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="inventory-summary-card">
-
-                        <span class="inventory-summary-label">
-                            Low Stock
-                        </span>
-
-                        <strong
-                            class="inventory-summary-value"
-                            id="lowStockProducts"
-                        >
-                            0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="inventory-summary-card">
-
-                        <span class="inventory-summary-label">
-                            Out of Stock
-                        </span>
-
-                        <strong
-                            class="inventory-summary-value"
-                            id="outOfStockProducts"
-                        >
-                            0
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
-                <!-- INVENTORY TABLE -->
-
-                <div
-                    class="inventory-table-wrapper"
-                    id="inventoryTableWrapper"
-                >
-
-                    <div
-                        class="inventory-empty"
-                        id="inventoryEmpty"
-                    >
-
-                        <h3>No products yet</h3>
-
-                        <p>
-                            Add your first product to start
-                            managing your inventory.
-                        </p>
-
-                        <button
-                            type="button"
-                            class="dashboard-primary-button"
-                            id="openProductFormEmpty"
-                        >
+                        <button type="button" class="dashboard-primary-button" id="openProductForm">
                             Add Product
                         </button>
 
                     </div>
 
 
-                    <table
-                        class="inventory-table"
-                        id="inventoryTable"
-                    >
+                    <!-- INVENTORY SUMMARY -->
 
-                        <thead>
+                    <div class="inventory-summary">
 
-                            <tr>
-                                <th>Product</th>
-                                <th>Category</th>
-                                <th>Stock</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
+                        <div class="inventory-summary-card">
 
-                        </thead>
+                            <span class="inventory-summary-label">
+                                Total Products
+                            </span>
 
-                        <tbody id="inventoryList">
+                            <strong class="inventory-summary-value" id="totalProducts">
+                                0
+                            </strong>
 
-                            <!-- Products will be rendered here -->
-
-                        </tbody>
-
-                    </table>
-
-                </div>
+                        </div>
 
 
-                <!-- ADD / EDIT PRODUCT FORM -->
+                        <div class="inventory-summary-card">
 
-                <div
-                    class="inventory-form-wrapper"
-                    id="inventoryFormWrapper"
-                >
+                            <span class="inventory-summary-label">
+                                Low Stock
+                            </span>
 
-                    <div class="inventory-form-card">
+                            <strong class="inventory-summary-value" id="lowStockProducts">
+                                0
+                            </strong>
 
-                        <div class="inventory-form-header">
+                        </div>
 
-                            <div>
 
-                                <h3 id="inventoryFormTitle">
-                                    Add Product
-                                </h3>
+                        <div class="inventory-summary-card">
 
-                                <p>
-                                    Add product information
-                                    to your inventory.
-                                </p>
+                            <span class="inventory-summary-label">
+                                Out of Stock
+                            </span>
 
-                            </div>
+                            <strong class="inventory-summary-value" id="outOfStockProducts">
+                                0
+                            </strong>
 
-                            <button
-                                type="button"
-                                class="inventory-form-close"
-                                id="closeProductForm"
-                            >
-                                ×
+                        </div>
+
+                    </div>
+
+
+                    <!-- INVENTORY TABLE -->
+
+                    <div class="inventory-table-wrapper" id="inventoryTableWrapper">
+
+                        <div class="inventory-empty" id="inventoryEmpty">
+
+                            <h3>No products yet</h3>
+
+                            <p>
+                                Add your first product to start
+                                managing your inventory.
+                            </p>
+
+                            <button type="button" class="dashboard-primary-button" id="openProductFormEmpty">
+                                Add Product
                             </button>
 
                         </div>
 
 
-                        <form id="inventoryForm">
+                        <table class="inventory-table" id="inventoryTable">
 
-                            <div class="inventory-form-grid">
+                            <thead>
 
-                                <div class="inventory-form-group">
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Stock</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
 
-                                    <label for="productName">
-                                        Product Name
-                                    </label>
+                            </thead>
 
-                                    <input
-                                        type="text"
-                                        id="productName"
-                                        placeholder="e.g. Product A"
-                                        required
-                                    >
+                            <tbody id="inventoryList">
+
+                                <!-- Products will be rendered here -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- ADD / EDIT PRODUCT FORM -->
+
+                    <div class="inventory-form-wrapper" id="inventoryFormWrapper">
+
+                        <div class="inventory-form-card">
+
+                            <div class="inventory-form-header">
+
+                                <div>
+
+                                    <h3 id="inventoryFormTitle">
+                                        Add Product
+                                    </h3>
+
+                                    <p>
+                                        Add product information
+                                        to your inventory.
+                                    </p>
+
+                                </div>
+
+                                <button type="button" class="inventory-form-close" id="closeProductForm">
+                                    ×
+                                </button>
+
+                            </div>
+
+
+                            <form id="inventoryForm">
+
+                                <div class="inventory-form-grid">
+
+                                    <div class="inventory-form-group">
+
+                                        <label for="productName">
+                                            Product Name
+                                        </label>
+
+                                        <input type="text" id="productName" placeholder="e.g. Product A" required>
+
+                                    </div>
+
+
+                                    <div class="inventory-form-group">
+
+                                        <label for="productCategory">
+                                            Category
+                                        </label>
+
+                                        <input type="text" id="productCategory" placeholder="e.g. Electronics" required>
+
+                                    </div>
+
+
+                                    <div class="inventory-form-group">
+
+                                        <label for="productStock">
+                                            Stock Quantity
+                                        </label>
+
+                                        <input type="number" id="productStock" min="0" placeholder="e.g. 25" required>
+
+                                    </div>
+
+
+                                    <div class="inventory-form-group">
+
+                                        <label for="productPrice">
+                                            Price
+                                        </label>
+
+                                        <input type="number" id="productPrice" min="0" placeholder="e.g. 50000"
+                                            required>
+
+                                    </div>
 
                                 </div>
 
 
-                                <div class="inventory-form-group">
+                                <div class="inventory-form-actions">
 
-                                    <label for="productCategory">
-                                        Category
+                                    <button type="button" class="inventory-form-cancel" id="cancelProductForm">
+                                        Cancel
+                                    </button>
+
+                                    <button type="submit" class="dashboard-primary-button">
+                                        Save Product
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Inventory Delete Modal -->
+
+                    <div class="inventory-delete-modal" id="inventoryDeleteModal">
+
+                        <div class="inventory-delete-modal-card">
+
+                            <div class="inventory-delete-modal-header">
+
+                                <div>
+                                    <h3>Delete Product</h3>
+
+                                    <p>
+                                        Are you sure you want to delete
+                                        <strong id="deleteProductName"></strong>?
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="inventory-delete-modal-actions">
+
+                                <button type="button" class="inventory-delete-cancel" id="cancelInventoryDelete">
+                                    Cancel
+                                </button>
+
+                                <button type="button" class="inventory-delete-confirm" id="confirmInventoryDelete">
+                                    Delete Product
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- ========================================
+     GOALS
+========================================= -->
+
+                <!-- ========================================
+     GOALS
+========================================= -->
+
+                <section class="dashboard-goals" id="goals">
+
+                    <div class="dashboard-section-header">
+
+                        <div>
+                            <h2>
+                                Goals
+                            </h2>
+
+                            <p>
+                                Set targets and track your business progress.
+                            </p>
+                        </div>
+
+                        <button type="button" class="dashboard-primary-button" id="openGoalForm">
+                            + Add goal
+                        </button>
+
+                    </div>
+
+
+                    <!-- Goals list -->
+
+                    <div class="goals-grid" id="goalsGrid">
+
+                        <!-- JavaScript will add goals here -->
+
+                    </div>
+
+
+                    <!-- Empty state -->
+
+                    <div class="dashboard-card goals-empty" id="goalsEmpty">
+
+                        <div class="dashboard-empty-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            No goals yet.
+                        </h3>
+
+                        <p>
+                            Create your first business goal and start
+                            tracking your progress.
+                        </p>
+
+                        <button type="button" class="dashboard-primary-button" id="openGoalFormEmpty">
+                            Create your first goal
+                        </button>
+
+                    </div>
+
+
+                    <!-- Goal form -->
+
+                    <div class="dashboard-card goal-form-wrapper" id="goalFormWrapper">
+
+                        <form class="goal-form" id="goalForm">
+
+                            <div class="goal-form-header">
+
+                                <div>
+                                    <h3 id="goalFormTitle">
+                                        Create goal
+                                    </h3>
+
+                                    <p>
+                                        Define a target for your business.
+                                    </p>
+                                </div>
+
+                                <button type="button" class="transaction-close-button" id="closeGoalForm"
+                                    aria-label="Close goal form">
+                                    ×
+                                </button>
+
+                            </div>
+
+
+                            <div class="transaction-form-grid">
+
+                                <!-- Goal name -->
+
+                                <div class="transaction-field">
+
+                                    <label for="goalName">
+                                        Goal name
                                     </label>
 
-                                    <input
-                                        type="text"
-                                        id="productCategory"
-                                        placeholder="e.g. Electronics"
-                                        required
-                                    >
+                                    <input type="text" id="goalName" placeholder="e.g. Monthly Revenue" required>
 
                                 </div>
 
 
-                                <div class="inventory-form-group">
+                                <!-- Goal type -->
 
-                                    <label for="productStock">
-                                        Stock Quantity
+                                <div class="transaction-field">
+
+                                    <label for="goalType">
+                                        Goal type
                                     </label>
 
-                                    <input
-                                        type="number"
-                                        id="productStock"
-                                        min="0"
-                                        placeholder="e.g. 25"
-                                        required
-                                    >
+                                    <select id="goalType" required>
+
+                                        <option value="">
+                                            Select goal type
+                                        </option>
+
+                                        <option value="revenue">
+                                            Revenue
+                                        </option>
+
+                                        <option value="profit">
+                                            Profit
+                                        </option>
+
+                                        <option value="expense">
+                                            Expense Limit
+                                        </option>
+
+                                        <option value="sales">
+                                            Product Sales
+                                        </option>
+
+                                    </select>
 
                                 </div>
 
 
-                                <div class="inventory-form-group">
+                                <!-- Target -->
 
-                                    <label for="productPrice">
-                                        Price
+                                <div class="transaction-field">
+
+                                    <label for="goalTarget">
+                                        Target
                                     </label>
 
-                                    <input
-                                        type="number"
-                                        id="productPrice"
-                                        min="0"
-                                        placeholder="e.g. 50000"
-                                        required
-                                    >
+                                    <input type="number" id="goalTarget" placeholder="e.g. 1000000" min="1" step="1"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Start date -->
+
+                                <div class="transaction-field">
+
+                                    <label for="goalStartDate">
+                                        Start date
+                                    </label>
+
+                                    <input type="date" id="goalStartDate" required>
+
+                                </div>
+
+
+                                <!-- End date -->
+
+                                <div class="transaction-field">
+
+                                    <label for="goalEndDate">
+                                        End date
+                                    </label>
+
+                                    <input type="date" id="goalEndDate" required>
 
                                 </div>
 
                             </div>
 
 
-                            <div class="inventory-form-actions">
+                            <div class="transaction-form-actions">
 
-                                <button
-                                    type="button"
-                                    class="inventory-form-cancel"
-                                    id="cancelProductForm"
-                                >
+                                <button type="button" class="transaction-cancel-button" id="cancelGoalForm">
                                     Cancel
                                 </button>
 
-                                <button
-                                    type="submit"
-                                    class="dashboard-primary-button"
-                                >
-                                    Save Product
+                                <button type="submit" class="transaction-save-button">
+                                    Save goal
                                 </button>
 
                             </div>
@@ -1196,791 +1193,435 @@
 
                     </div>
 
-                </div>
+                </section>
 
-                <!-- Inventory Delete Modal -->
-
-<div
-    class="inventory-delete-modal"
-    id="inventoryDeleteModal"
->
-
-    <div class="inventory-delete-modal-card">
-
-        <div class="inventory-delete-modal-header">
-
-            <div>
-                <h3>Delete Product</h3>
-
-                <p>
-                    Are you sure you want to delete
-                    <strong id="deleteProductName"></strong>?
-                </p>
-            </div>
-
-        </div>
-
-        <div class="inventory-delete-modal-actions">
-
-            <button
-                type="button"
-                class="inventory-delete-cancel"
-                id="cancelInventoryDelete"
-            >
-                Cancel
-            </button>
-
-            <button
-                type="button"
-                class="inventory-delete-confirm"
-                id="confirmInventoryDelete"
-            >
-                Delete Product
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-            </section>
-
-    <!-- ========================================
-     GOALS
-========================================= -->
-
-<!-- ========================================
-     GOALS
-========================================= -->
-
-<section
-    class="dashboard-goals"
-    id="goals"
->
-
-    <div class="dashboard-section-header">
-
-        <div>
-            <h2>
-                Goals
-            </h2>
-
-            <p>
-                Set targets and track your business progress.
-            </p>
-        </div>
-
-        <button
-            type="button"
-            class="dashboard-primary-button"
-            id="openGoalForm"
-        >
-            + Add goal
-        </button>
-
-    </div>
-
-
-    <!-- Goals list -->
-
-    <div
-        class="goals-grid"
-        id="goalsGrid"
-    >
-
-        <!-- JavaScript will add goals here -->
-
-    </div>
-
-
-    <!-- Empty state -->
-
-    <div
-        class="dashboard-card goals-empty"
-        id="goalsEmpty"
-    >
-
-        <div class="dashboard-empty-icon">
-            ◎
-        </div>
-
-        <h3>
-            No goals yet.
-        </h3>
-
-        <p>
-            Create your first business goal and start
-            tracking your progress.
-        </p>
-
-        <button
-            type="button"
-            class="dashboard-primary-button"
-            id="openGoalFormEmpty"
-        >
-            Create your first goal
-        </button>
-
-    </div>
-
-
-    <!-- Goal form -->
-
-    <div
-        class="dashboard-card goal-form-wrapper"
-        id="goalFormWrapper"
-    >
-
-        <form
-            class="goal-form"
-            id="goalForm"
-        >
-
-            <div class="goal-form-header">
-
-                <div>
-                    <h3 id="goalFormTitle">
-                        Create goal
-                    </h3>
-
-                    <p>
-                        Define a target for your business.
-                    </p>
-                </div>
-
-                <button
-                    type="button"
-                    class="transaction-close-button"
-                    id="closeGoalForm"
-                    aria-label="Close goal form"
-                >
-                    ×
-                </button>
-
-            </div>
-
-
-            <div class="transaction-form-grid">
-
-                <!-- Goal name -->
-
-                <div class="transaction-field">
-
-                    <label for="goalName">
-                        Goal name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="goalName"
-                        placeholder="e.g. Monthly Revenue"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Goal type -->
-
-                <div class="transaction-field">
-
-                    <label for="goalType">
-                        Goal type
-                    </label>
-
-                    <select
-                        id="goalType"
-                        required
-                    >
-
-                        <option value="">
-                            Select goal type
-                        </option>
-
-                        <option value="revenue">
-                            Revenue
-                        </option>
-
-                        <option value="profit">
-                            Profit
-                        </option>
-
-                        <option value="expense">
-                            Expense Limit
-                        </option>
-
-                        <option value="sales">
-                            Product Sales
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- Target -->
-
-                <div class="transaction-field">
-
-                    <label for="goalTarget">
-                        Target
-                    </label>
-
-                    <input
-                        type="number"
-                        id="goalTarget"
-                        placeholder="e.g. 1000000"
-                        min="1"
-                        step="1"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- Start date -->
-
-                <div class="transaction-field">
-
-                    <label for="goalStartDate">
-                        Start date
-                    </label>
-
-                    <input
-                        type="date"
-                        id="goalStartDate"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- End date -->
-
-                <div class="transaction-field">
-
-                    <label for="goalEndDate">
-                        End date
-                    </label>
-
-                    <input
-                        type="date"
-                        id="goalEndDate"
-                        required
-                    >
-
-                </div>
-
-            </div>
-
-
-            <div class="transaction-form-actions">
-
-                <button
-                    type="button"
-                    class="transaction-cancel-button"
-                    id="cancelGoalForm"
-                >
-                    Cancel
-                </button>
-
-                <button
-                    type="submit"
-                    class="transaction-save-button"
-                >
-                    Save goal
-                </button>
-
-            </div>
-
-        </form>
-
-    </div>
-
-</section>
-
-<!-- ========================================
+                <!-- ========================================
      DELETE GOAL MODAL
 ========================================= -->
 
-<div
-    class="goal-delete-modal"
-    id="goalDeleteModal"
->
+                <div class="goal-delete-modal" id="goalDeleteModal">
 
-    <div class="goal-delete-modal-content">
+                    <div class="goal-delete-modal-content">
 
-        <div class="goal-delete-modal-header">
+                        <div class="goal-delete-modal-header">
 
-            <h3>
-                Delete goal?
-            </h3>
+                            <h3>
+                                Delete goal?
+                            </h3>
 
-            <p>
-                This action cannot be undone.
-            </p>
+                            <p>
+                                This action cannot be undone.
+                            </p>
 
-        </div>
+                        </div>
 
 
-        <div class="goal-delete-modal-message">
+                        <div class="goal-delete-modal-message">
 
-            Are you sure you want to delete
-            <strong id="deleteGoalName"></strong>?
+                            Are you sure you want to delete
+                            <strong id="deleteGoalName"></strong>?
 
-        </div>
-
-
-        <div class="goal-delete-modal-actions">
-
-            <button
-                type="button"
-                class="transaction-cancel-button"
-                id="cancelGoalDelete"
-            >
-                Cancel
-            </button>
-
-            <button
-                type="button"
-                class="goal-delete-confirm"
-                id="confirmGoalDelete"
-            >
-                Delete goal
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
+                        </div>
 
 
-<!-- ========================================
+                        <div class="goal-delete-modal-actions">
+
+                            <button type="button" class="transaction-cancel-button" id="cancelGoalDelete">
+                                Cancel
+                            </button>
+
+                            <button type="button" class="goal-delete-confirm" id="confirmGoalDelete">
+                                Delete goal
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
      SETTINGS
 ========================================= -->
 
-<section
-    class="dashboard-settings"
-    id="settings"
->
+                <section class="dashboard-settings" id="settings">
 
-    <div class="dashboard-section-header">
+                    <div class="dashboard-section-header">
 
-        <div>
-            <h2>
-                Settings
-            </h2>
+                        <div>
+                            <h2>
+                                Settings
+                            </h2>
 
-            <p>
-                Manage your business profile and preferences.
-            </p>
-        </div>
+                            <p>
+                                Manage your business profile and preferences.
+                            </p>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <div class="settings-grid">
+                    <div class="settings-grid">
 
-        <!-- BUSINESS PROFILE -->
+                        <!-- BUSINESS PROFILE -->
 
-        <div class="dashboard-card settings-card">
+                        <div class="dashboard-card settings-card">
 
-            <div class="settings-card-header">
+                            <div class="settings-card-header">
 
-                <div>
-                    <h3>
-                        Business Profile
-                    </h3>
+                                <div>
+                                    <h3>
+                                        Business Profile
+                                    </h3>
 
-                    <p>
-                        Tell Business Copilot about your business.
-                    </p>
-                </div>
+                                    <p>
+                                        Tell Business Copilot about your business.
+                                    </p>
+                                </div>
 
-            </div>
+                            </div>
 
 
-            <div class="settings-form-grid">
+                            <div class="settings-form-grid">
 
-                <div class="settings-field">
+                                <div class="settings-field">
 
-                    <label for="businessName">
-                        Business name
-                    </label>
+                                    <label for="businessName">
+                                        Business name
+                                    </label>
 
-                    <input
-                        type="text"
-                        id="businessName"
-                        placeholder="e.g. Emmanuel Stores"
-                    >
+                                    <input type="text" id="businessName" placeholder="e.g. Emmanuel Stores">
 
-                </div>
+                                </div>
 
 
-                <div class="settings-field">
+                                <div class="settings-field">
 
-                    <label for="businessType">
-                        Business type
-                    </label>
+                                    <label for="businessType">
+                                        Business type
+                                    </label>
 
-                    <select id="businessType">
+                                    <select id="businessType">
 
-                        <option value="">
-                            Select business type
-                        </option>
+                                        <option value="">
+                                            Select business type
+                                        </option>
 
-                        <option value="retail">
-                            Retail
-                        </option>
+                                        <option value="retail">
+                                            Retail
+                                        </option>
 
-                        <option value="wholesale">
-                            Wholesale
-                        </option>
+                                        <option value="wholesale">
+                                            Wholesale
+                                        </option>
 
-                        <option value="services">
-                            Services
-                        </option>
+                                        <option value="services">
+                                            Services
+                                        </option>
 
-                        <option value="food">
-                            Food & Restaurant
-                        </option>
+                                        <option value="food">
+                                            Food & Restaurant
+                                        </option>
 
-                        <option value="online">
-                            Online Business
-                        </option>
+                                        <option value="online">
+                                            Online Business
+                                        </option>
 
-                        <option value="other">
-                            Other
-                        </option>
+                                        <option value="other">
+                                            Other
+                                        </option>
 
-                    </select>
+                                    </select>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <!-- ACCOUNT INFORMATION -->
+                        <!-- ACCOUNT INFORMATION -->
 
-        <div class="dashboard-card settings-card">
+                        <div class="dashboard-card settings-card">
 
-            <div class="settings-card-header">
+                            <div class="settings-card-header">
 
-                <div>
-                    <h3>
-                        Account Information
-                    </h3>
+                                <div>
+                                    <h3>
+                                        Account Information
+                                    </h3>
 
-                    <p>
-                        Information connected to your account.
-                    </p>
-                </div>
+                                    <p>
+                                        Information connected to your account.
+                                    </p>
+                                </div>
 
-            </div>
+                            </div>
 
 
-            <div class="settings-form-grid">
+                            <div class="settings-form-grid">
 
-                <div class="settings-field">
+                                <div class="settings-field">
 
-                    <label for="settingsName">
-                        Name
-                    </label>
+                                    <label for="settingsName">
+                                        Name
+                                    </label>
 
-                    <input
-                        type="text"
-                        id="settingsName"
-                        readonly
-                    >
+                                    <input type="text" id="settingsName" readonly>
 
-                </div>
+                                </div>
 
 
-                <div class="settings-field">
+                                <div class="settings-field">
 
-                    <label for="settingsEmail">
-                        Email
-                    </label>
+                                    <label for="settingsEmail">
+                                        Email
+                                    </label>
 
-                    <input
-                        type="email"
-                        id="settingsEmail"
-                        readonly
-                    >
+                                    <input type="email" id="settingsEmail" readonly>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <!-- PREFERENCES -->
+                        <!-- PREFERENCES -->
 
-        <div class="dashboard-card settings-card">
+                        <div class="dashboard-card settings-card">
 
-            <div class="settings-card-header">
+                            <div class="settings-card-header">
 
-                <div>
-                    <h3>
-                        Preferences
-                    </h3>
+                                <div>
+                                    <h3>
+                                        Preferences
+                                    </h3>
 
-                    <p>
-                        Customize how Business Copilot displays your information.
-                    </p>
-                </div>
+                                    <p>
+                                        Customize how Business Copilot displays your information.
+                                    </p>
+                                </div>
 
-            </div>
+                            </div>
 
 
-            <div class="settings-form-grid">
+                            <div class="settings-form-grid">
 
-                <div class="settings-field">
+                                <div class="settings-field">
 
-                    <label for="settingsCurrency">
-                        Currency
-                    </label>
+                                    <label for="settingsCurrency">
+                                        Currency
+                                    </label>
 
-                    <select id="settingsCurrency">
+                                    <select id="settingsCurrency">
 
-                        <option value="NGN">
-                            Nigerian Naira (₦)
-                        </option>
+                                        <option value="NGN">
+                                            Nigerian Naira (₦)
+                                        </option>
 
-                        <option value="USD">
-                            US Dollar ($)
-                        </option>
+                                        <option value="USD">
+                                            US Dollar ($)
+                                        </option>
 
-                        <option value="GBP">
-                            British Pound (£)
-                        </option>
+                                        <option value="GBP">
+                                            British Pound (£)
+                                        </option>
 
-                    </select>
+                                    </select>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
 
-            <div class="settings-actions">
+                            <div class="settings-actions">
 
-                <button
-                    type="button"
-                    class="dashboard-primary-button"
-                    id="saveSettingsButton"
-                >
-                    Save changes
-                </button>
+                                <button type="button" class="dashboard-primary-button" id="saveSettingsButton">
+                                    Save changes
+                                </button>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-</section>
+                </section>
 
-<!-- ========================================
+                <!-- ========================================
      INSIGHTS
 ========================================= -->
 
-<section
-    class="dashboard-insights"
-    id="insights"
->
+                <section class="dashboard-insights" id="insights">
 
-    <div class="dashboard-section-header">
+                    <div class="dashboard-section-header">
 
-        <div>
+                        <div>
 
-            <h2>
-                Insights
-            </h2>
+                            <h2>
+                                Insights
+                            </h2>
 
-            <p>
-                Understand what your business data is telling you.
-            </p>
+                            <p>
+                                Understand what your business data is telling you.
+                            </p>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <!-- INSIGHTS SUMMARY -->
+                    <!-- INSIGHTS SUMMARY -->
 
-    <div class="insights-summary-grid">
+                    <div class="insights-summary-grid">
 
-        <div class="dashboard-card insights-summary-card">
+                        <div class="dashboard-card insights-summary-card">
 
-            <div class="insights-summary-icon">
-                ↗
-            </div>
+                            <div class="insights-summary-icon">
+                                ↗
+                            </div>
 
-            <div>
+                            <div>
 
-                <span class="insights-summary-label">
-                    Revenue
-                </span>
+                                <span class="insights-summary-label">
+                                    Revenue
+                                </span>
 
-                <strong
-                    id="insightsRevenue"
-                    class="insights-summary-value"
-                >
-                    ₦0
-                </strong>
+                                <strong id="insightsRevenue" class="insights-summary-value">
+                                    ₦0
+                                </strong>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <div class="dashboard-card insights-summary-card">
+                        <div class="dashboard-card insights-summary-card">
 
-            <div class="insights-summary-icon">
-                ↓
-            </div>
+                            <div class="insights-summary-icon">
+                                ↓
+                            </div>
 
-            <div>
+                            <div>
 
-                <span class="insights-summary-label">
-                    Expenses
-                </span>
+                                <span class="insights-summary-label">
+                                    Expenses
+                                </span>
 
-                <strong
-                    id="insightsExpenses"
-                    class="insights-summary-value"
-                >
-                    ₦0
-                </strong>
+                                <strong id="insightsExpenses" class="insights-summary-value">
+                                    ₦0
+                                </strong>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <div class="dashboard-card insights-summary-card">
+                        <div class="dashboard-card insights-summary-card">
 
-            <div class="insights-summary-icon">
-                =
-            </div>
+                            <div class="insights-summary-icon">
+                                =
+                            </div>
 
-            <div>
+                            <div>
 
-                <span class="insights-summary-label">
-                    Net Profit
-                </span>
+                                <span class="insights-summary-label">
+                                    Net Profit
+                                </span>
 
-                <strong
-                    id="insightsProfit"
-                    class="insights-summary-value"
-                >
-                    ₦0
-                </strong>
+                                <strong id="insightsProfit" class="insights-summary-value">
+                                    ₦0
+                                </strong>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <!-- BUSINESS INSIGHTS -->
+                    <!-- BUSINESS INSIGHTS -->
 
-    <div class="dashboard-card insights-main-card">
+                    <div class="dashboard-card insights-main-card">
 
-        <div class="insights-card-header">
+                        <div class="insights-card-header">
 
-            <div>
+                            <div>
 
-                <h3>
-                    Business Insights
-                </h3>
+                                <h3>
+                                    Business Insights
+                                </h3>
 
-                <p>
-                    Important patterns and areas that may need your attention.
-                </p>
+                                <p>
+                                    Important patterns and areas that may need your attention.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <div
-            id="insightsList"
-            class="insights-list"
-        >
+                        <div id="insightsList" class="insights-list">
 
-            <div
-                id="insightsEmpty"
-                class="insights-empty"
-            >
+                            <div id="insightsEmpty" class="insights-empty">
 
-                <h4>
-                    No insights yet
-                </h4>
+                                <h4>
+                                    No insights yet
+                                </h4>
 
-                <p>
-                    Add more business data and Business Copilot will start identifying useful patterns.
-                </p>
+                                <p>
+                                    Add more business data and Business Copilot will start identifying useful patterns.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
 
-    <!-- RECOMMENDATIONS -->
+                    <!-- RECOMMENDATIONS -->
 
-    <div class="dashboard-card insights-recommendations-card">
+                    <div class="dashboard-card insights-recommendations-card">
 
-        <div class="insights-card-header">
+                        <div class="insights-card-header">
 
-            <div>
+                            <div>
 
-                <h3>
-                    Recommendations
-                </h3>
+                                <h3>
+                                    Recommendations
+                                </h3>
 
-                <p>
-                    Practical actions based on your business activity.
-                </p>
+                                <p>
+                                    Practical actions based on your business activity.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
 
-        <div
-            id="recommendationsList"
-            class="recommendations-list"
-        >
+                        <div id="recommendationsList" class="recommendations-list">
 
-            <div
-                id="recommendationsEmpty"
-                class="recommendations-empty"
-            >
+                            <div id="recommendationsEmpty" class="recommendations-empty">
 
-                <h4>
-                    No recommendations yet
-                </h4>
+                                <h4>
+                                    No recommendations yet
+                                </h4>
 
-                <p>
-                    Recommendations will appear as more data becomes available.
-                </p>
+                                <p>
+                                    Recommendations will appear as more data becomes available.
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-</section>
+                </section>
 
 
             </div>
@@ -1989,7 +1630,7 @@
 
     </div>
 
-      <!-- Authentication JavaScript -->
+    <!-- Authentication JavaScript -->
     <script src="/js/auth.js"></script>
     <script src="/js/storage.js"></script>
 
@@ -2000,7 +1641,8 @@
     <script src="/js/inventory.js"></script>
     <script src="/js/goals.js"></script>
 
-  
+
 
 </body>
+
 </html>
