@@ -1603,9 +1603,9 @@
 }
 
 
-/* ========================================
-   INVENTORY FORM GRID
-========================================= */
+
+   /* INVENTORY FORM GRID */
+
 
 .inventory-form-grid {
     display: grid;
@@ -1665,9 +1665,9 @@
 }
 
 
-/* ========================================
-   INVENTORY FORM ACTIONS
-========================================= */
+
+   /* INVENTORY FORM ACTIONS */
+
 
 .inventory-form-actions {
     display: flex;
@@ -1703,9 +1703,9 @@
 }
 
 
-/* ========================================
-   INVENTORY RESPONSIVE
-========================================= */
+
+   /* INVENTORY RESPONSIVE */
+
 
 @media (max-width: 800px) {
 
@@ -1734,9 +1734,9 @@
 
 }
 
-/* ========================================
-   INVENTORY LAYOUT FIX
-========================================= */
+
+   /* INVENTORY LAYOUT FIX */
+
 
 .dashboard-inventory {
     width: 100%;
@@ -1769,9 +1769,9 @@
     min-width: 0;
 }
 
-/* ========================================
-   INVENTORY ACTION BUTTONS
-========================================= */
+
+   /* INVENTORY ACTION BUTTONS */
+
 
 .inventory-actions {
     display: flex;
@@ -1816,9 +1816,9 @@
 }
 
 
-/* ========================================
-   INVENTORY DELETE MODAL
-========================================= */
+
+   /* INVENTORY DELETE MODAL */
+
 
 .inventory-delete-modal {
     position: fixed;
@@ -1896,9 +1896,9 @@
     background: #941d14;
 }
 
-/* ========================================
-   TRANSACTION PRODUCT FIELDS
-========================================= */
+
+   /* TRANSACTION PRODUCT FIELDS */
+
 
 #transactionProductField,
 #transactionQuantityField {
@@ -1921,18 +1921,18 @@
 }
 
 
-/* ========================================
-   GOALS
-========================================= */
+
+   /* GOALS */
+
 
 .dashboard-goals {
     width: 100%;
 }
 
 
-/* ========================================
-   GOALS GRID
-========================================= */
+
+   /* GOALS GRID */
+
 
 .goals-grid {
     display: grid;
@@ -1944,9 +1944,9 @@
 }
 
 
-/* ========================================
-   GOAL CARD
-========================================= */
+
+   /* GOAL CARD */
+
 
 .goal-card {
     background: var(--surface);
@@ -1968,9 +1968,9 @@
 }
 
 
-/* ========================================
-   GOAL HEADER
-========================================= */
+
+   /* GOAL HEADER */
+
 
 .goal-card-header {
     display: grid;
@@ -2013,9 +2013,9 @@
 }
 
 
-/* ========================================
-   GOAL MENU
-========================================= */
+
+   /* GOAL MENU */
+
 
 .goal-card-menu {
     display: flex;
@@ -2049,9 +2049,9 @@
 }
 
 
-/* ========================================
-   GOAL VALUE
-========================================= */
+
+   /* GOAL VALUE */
+
 
 .goal-card-values {
     display: flex;
@@ -2077,9 +2077,9 @@
 }
 
 
-/* ========================================
-   PROGRESS BAR
-========================================= */
+
+   /* PROGRESS BAR */
+
 
 .goal-progress {
     margin-top: 18px;
@@ -2124,9 +2124,9 @@
 }
 
 
-/* ========================================
-   GOAL DATES
-========================================= */
+
+   /* GOAL DATES */
+
 
 .goal-card-dates {
     margin-top: 20px;
@@ -2141,9 +2141,9 @@
 }
 
 
-/* ========================================
-   GOAL FORM
-========================================= */
+
+   /* GOAL FORM */
+
 
 .goal-form-wrapper {
     display: none;
@@ -2181,9 +2181,9 @@
 }
 
 
-/* ========================================
-   GOALS EMPTY STATE
-========================================= */
+
+   /* GOALS EMPTY STATE */
+
 
 .goals-empty {
     margin-top: 20px;
@@ -2194,9 +2194,9 @@
 }
 
 
-/* ========================================
-   RESPONSIVE
-========================================= */
+
+   /* RESPONSIVE */
+
 
 @media (max-width: 700px) {
 
@@ -2210,9 +2210,9 @@
 
 }
 
-/* ========================================
-   GOAL DELETE MODAL
-========================================= */
+
+   /* GOAL DELETE MODAL */
+
 
 .goal-delete-modal {
     position: fixed;
@@ -2295,9 +2295,9 @@
     background: #941d14;
 }
 
-/* ========================================
-   GOAL STATUS
-========================================= */
+
+   /* GOAL STATUS */
+
 
 .goal-status {
     display: inline-flex;
@@ -2335,9 +2335,9 @@
 }
 
 
-/* ========================================
-   FINANCIAL ACTIVITY
-========================================= */
+
+   /* FINANCIAL ACTIVITY */
+
 
 .dashboard-activity-card {
     margin-top: 24px;
@@ -2392,9 +2392,9 @@
 }
 
 
- /* ========================================
-    RECENT TRANSACTIONS
- ========================================= */
+
+    /* RECENT TRANSACTIONS */
+
 
 .dashboard-recent-card {
     margin-top: 24px;
@@ -2597,9 +2597,9 @@
     }
 }
 
-/* ========================================
-   RECENT TRANSACTION ICON
-========================================= */
+
+   /* RECENT TRANSACTION ICON */
+
 
 .dashboard-recent-icon {
     width: 36px;
@@ -2626,9 +2626,9 @@
 }
 
 
-/* ========================================
-   SETTINGS
-========================================= */
+
+   /* SETTINGS */
+
 
 .dashboard-settings {
     width: 100%;
@@ -2722,9 +2722,9 @@
 }
 
 
-/* ========================================
-   SETTINGS RESPONSIVE
-========================================= */
+
+   /* SETTINGS RESPONSIVE */
+
 
 @media (max-width: 800px) {
 
@@ -2755,9 +2755,9 @@
 }
 
 
-/* ========================================
-   INSIGHTS
-========================================= */
+
+   /* INSIGHTS */
+
 
 .dashboard-insights {
     width: 100%;
@@ -3051,9 +3051,8 @@
 
 }
 
-/* ========================================
-   NOTIFICATIONS
-========================================= */
+   /* NOTIFICATIONS */
+
 
 .dashboard-topbar-actions {
     position: relative;
@@ -3243,9 +3242,9 @@
     color: #6b7280;
 }
 
-/* ========================================
-   INVENTORY NOTIFICATION TOAST
-========================================= */
+
+   /* INVENTORY NOTIFICATION TOAST */
+
 
 .inventory-notification-toast {
     position: fixed;
@@ -3368,9 +3367,8 @@
 
 }
 
-/* ========================================
-   RECOMMENDATION PRIORITY
-======================================== */
+
+   /* RECOMMENDATION PRIORITY */
 
 .recommendation-item-heading {
     display: flex;
